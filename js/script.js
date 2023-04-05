@@ -29,7 +29,11 @@ class NotificationsApp {
   markAsRead(e, all) {
     const target =
       e.target.tagName === "UL" ? e.target : e.target.closest(".notification");
-    if (!all && target.tagName === "LI") {
+    if (
+      !all &&
+      target.tagName === "LI" &&
+      target.classList.contains("notification--unread")
+    ) {
       target.classList.remove("notification--unread");
       this.unreadQty--;
       this.reduceQty();
