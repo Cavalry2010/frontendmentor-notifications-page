@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <script defer src="./js/script.js"></script>
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <div class="containter align-center">
+        <div class="notifications-main-box">
+          <div class="notifications-header">
+            <h1 class="primary-heading">Notifications</h1>
+            <span class="unread-notifications">0</span>
+            <button class="btn-mark-as-read" type="button">
+              Mark all as read
+            </button>
+          </div>
+          <ul class="notifications-box">
+            <li class="notification notification--unread">
+              <img
+                class="user-avatar"
+                src="./assets/images/avatar-mark-webber.webp"
+                alt="Mark Webber"
+              />
+              <div class="notification-text-box">
+                <p class="notification-text">
+                  <a href="#" class="link link--user">Mark Webber</a> reacted to
+                  your recent post
+                  <a href="#" class="link link--post"
+                    >My first tournament today!</a
+                  >
+                </p>
+                <p class="time-since">1m ago</p>
+              </div>
+            </li>
+            <li class="notification notification--unread">
+              <img
+                class="user-avatar"
+                src="./assets/images/avatar-angela-gray.webp"
+                alt="Angela Gray"
+              />
+              <div class="notification-text-box">
+                <p class="notification-text">
+                  <a href="#" class="link link--user">Angela Gray</a> followed
+                  you
+                </p>
+                <p class="time-since">5m ago</p>
+              </div>
+            </li>
+            <li class="notification notification--unread">
+              <img
+                class="user-avatar"
+                src="./assets/images/avatar-jacob-thompson.webp"
+                alt="Jacob Thompson"
+              />
+              <div class="notification-text-box">
+                <p class="notification-text">
+                  <a href="#" class="link link--user">Jacob Thompson</a> has
+                  joined your group
+                  <a href="#" class="link link--group">Chess Club</a>
+                </p>
+                <p class="time-since">1 day ago</p>
+              </div>
+            </li>
+            <li class="notification">
+              <img
+                class="user-avatar"
+                src="./assets/images/avatar-rizky-hasanuddin.webp"
+                alt="Rizky Hasanuddin"
+              />
+              <div class="notification-text-box">
+                <p class="notification-text">
+                  <a href="#" class="link link--user">Rizky Hasanuddin</a> sent
+                  you a private message
+                </p>
+                <p class="time-since">5 days ago</p>
+                <p class="pm">
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </li>
+            <li class="notification">
+              <img
+                class="user-avatar"
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt="Kimberly Smith"
+              />
+              <div class="notification-text-box">
+                <p class="notification-text">
+                  <a href="#" class="link link--user">Kimberly Smith</a>
+                  commented on your picture
+                </p>
+                <p class="time-since">1 week ago</p>
+              </div>
+              <img
+                class="post-picture"
+                src="./assets/images/image-chess.webp"
+                alt="Woman playing chess"
+              />
+            </li>
+            <li class="notification">
+              <img
+                class="user-avatar"
+                src="./assets/images/avatar-nathan-peterson.webp"
+                alt="Nathan Peterson"
+              />
+              <div class="notification-text-box">
+                <p class="notification-text">
+                  <a href="#" class="link link--user">Nathan Peterson</a>
+                  reacted to your recent post
+                  <a href="#" class="link link--post"
+                    >5 end-game strategies to increase your win rate</a
+                  >
+                </p>
+                <p class="time-since">2 weeks ago</p>
+              </div>
+            </li>
+            <li class="notification">
+              <img
+                class="user-avatar"
+                src="./assets/images/avatar-anna-kim.webp"
+                alt="Anna Kim"
+              />
+              <div class="notification-text-box">
+                <p class="notification-text">
+                  <a href="#" class="link link--user">Anna Kim</a> left the
+                  group
+                  <a href="#" class="link link--group">Chess Club</a>
+                </p>
+                <p class="time-since">2 weeks ago</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alejandro Perdomo</a>.
+      </div>
+    </footer>
+  </body>
+</html>
